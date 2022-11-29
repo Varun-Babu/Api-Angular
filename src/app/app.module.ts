@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ViewPassengerComponent } from './view-passenger/view-passenger.component';
 import { ViewUsaComponent } from './view-usa/view-usa.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ProductViewComponent } from './product-view/product-view.component';
 
 const myRoute : Routes=[
   {
@@ -20,6 +21,10 @@ const myRoute : Routes=[
   {
     path:"user",
     component:UserInfoComponent
+  },
+  {
+    path:"product",
+    component:ProductViewComponent
   }
 ]
 
@@ -28,7 +33,8 @@ const myRoute : Routes=[
     AppComponent,
     ViewPassengerComponent,
     ViewUsaComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ProductViewComponent
   ],
   imports: [
     BrowserModule,

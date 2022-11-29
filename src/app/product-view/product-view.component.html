@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of productview.products">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{i.thumbnail}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">Trips : {{i.description}}</p>
+                        
+                        </div>
+                        <ul class="list-group list-group-flush" >
+                          <li class="list-group-item">Name{{i.price}}</li>
+                          <li class="list-group-item">{{i.discountPercentage}}</li>
+    
+                        </ul>
+                        <div class="card-body">
+                          <a href="{{i.images}}" class="card-link">Images</a>
+                      
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
